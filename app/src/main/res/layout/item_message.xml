@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardCornerRadius="40dp">
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/cvProfileImage"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="Spencer Mateega" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:fontFamily="@font/helveticaneuemed"
+        android:text=""
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        tools:text="4:48 PM" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/cvProfileImage"
+        android:fontFamily="@font/helveticaneuemed"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:text="[at] tim In my view, history will deem the accelerated shift towards passive
+        funds during the last 20 years as a massive misallocation of capital." />
+
+<!--    trade chat item-->
+    <TextView
+        android:id="@+id/tvTradeExecuted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Trade Executed"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTradeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tvTradeExecuted"
+        android:fontFamily="@font/helveticaneuemed"
+        android:text=""
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        tools:text="4:48 PM" />
+
+    <TextView
+        android:id="@+id/tvTradeLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTradeExecuted"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:text="0.8459 ETH @ $1,165.87" />
+
+    <TextView
+        android:id="@+id/tvTradeLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTradeLine1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        tools:text="Trade by @spencer_mateega" />
+
+</RelativeLayout>
+

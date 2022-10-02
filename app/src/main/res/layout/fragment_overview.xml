@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    tools:context=".fragments.OverviewFragment">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/britanica_black"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="Hello, Steven" />
+
+    <TextView
+        android:id="@+id/tvWelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Welcome Back to USC Blockchain!" />
+
+    <LinearLayout
+        android:id="@+id/layRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:paddingVertical="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivMembers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_people_24"
+                />
+            <TextView
+                android:id="@+id/tvMembersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/britanica_black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="45" />
+            <TextView
+                android:id="@+id/tvMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/britanica_bold"
+                android:textColor="@color/white"
+                android:text="Members" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layGroupAssets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:paddingVertical="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivGroupAssets"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_attach_money_24_white" />
+            <TextView
+                android:id="@+id/tvGroupAssetsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/britanica_black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="$824,149.81" />
+            <TextView
+                android:id="@+id/tvGroupAssets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/britanica_bold"
+                android:textColor="@color/white"
+                android:text="Group Assets" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layPersonalAssets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:paddingVertical="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivPersonalAssets"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_attach_money_24_white" />
+            <TextView
+                android:id="@+id/tvPersonalAssetsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/britanica_black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="$3,495.31" />
+            <TextView
+                android:id="@+id/tvPersonalAssets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/britanica_bold"
+                android:textColor="@color/white"
+                android:text="Personal Assets" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRecentTrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:paddingVertical="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivRecentTrade"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_add_chart_24" />
+            <TextView
+                android:id="@+id/tvRecentTradeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/britanica_black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="June 15, 2021" />
+            <TextView
+                android:id="@+id/tvRecentTrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/britanica_bold"
+                android:textColor="@color/white"
+                android:text="Most Recent Trade" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHoldings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/britanica_black"
+        android:letterSpacing="0.02"
+        android:text="Holdings"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHoldings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="40dp" />
+
+</LinearLayout>

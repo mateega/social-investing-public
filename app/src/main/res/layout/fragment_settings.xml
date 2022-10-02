@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SettingsFragment">
+
+
+
+    <Button
+        android:id="@+id/btnLeaveGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/layout_rounded"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Leave Group"
+        android:paddingVertical="0dp"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnSignout"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="right"
+        android:background="@drawable/layout_rounded"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:paddingVertical="0dp"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/britanica_black"
+        android:letterSpacing="0.02"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvInvestors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/britanica_black"
+        android:letterSpacing="0.02"
+        android:text="Investors"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInvestors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <TextView
+        android:id="@+id/tvMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/britanica_black"
+        android:letterSpacing="0.02"
+        android:text="Members"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp" />
+
+</LinearLayout>

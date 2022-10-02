@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+}
+
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+android {
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.metau.social_investing"
+        minSdk 29
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // should correspond to key/value pairs inside the file
+        buildConfigField("String", "COINMARKETCAP_KEY", apikeyProperties['COINMARKETCAP_KEY'])
+        buildConfigField("String", "COINAPI_KEY_1", apikeyProperties['COINAPI_KEY_1'])
+        buildConfigField("String", "COINAPI_KEY_2", apikeyProperties['COINAPI_KEY_2'])
+        buildConfigField("String", "COINAPI_AUTH_HEADER", apikeyProperties['COINAPI_AUTH_HEADER'])
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-firestore:24.1.2'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.firebase:firebase-functions:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.6'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Declare the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database'
+
+    // Declare the dependency for the Analytics library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Declare the dependencies for the Dynamic Links and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.tradingview:lightweightcharts:3.8.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+}
+
+apply plugin: 'com.google.gms.google-services'
+

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.DepositFragment">
+
+    <TextView
+        android:id="@+id/tvDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/britanica_black"
+        android:letterSpacing="0.02"
+        android:text="Deposit"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvCurrentAccountAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textSize="18sp"
+        android:text="Current account assets:" />
+
+    <TextView
+        android:id="@+id/tvDepositAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/britanica_bold"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:text="$9,400.00" />
+
+
+<!--    Deposit interval commented out until functionality is implemented-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layDepositInterval"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:weightSum="4"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnOnce"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            android:paddingHorizontal="0dp"-->
+<!--            android:text="Once"-->
+<!--            android:textAllCaps="false" />-->
+<!--        <Button-->
+<!--            android:id="@+id/btnWeekly"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            android:paddingHorizontal="0dp"-->
+<!--            android:text="Weekly"-->
+<!--            android:textAllCaps="false"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnMonthly"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            android:paddingHorizontal="0dp"-->
+<!--            android:text="Monthly"-->
+<!--            android:textAllCaps="false"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnYearly"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            android:paddingHorizontal="0dp"-->
+<!--            android:text="Yearly"-->
+<!--            android:textAllCaps="false"/>-->
+<!--    </LinearLayout>-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:layout_marginHorizontal="40dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="6"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="7"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="8"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="9"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAllCaps="false"/>
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:rotation="180"
+                android:src="@drawable/ic_baseline_arrow_right_alt_24"
+                 />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:text="Cancel"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnDeposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_rounded"
+            android:text="Deposit"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
