@@ -5,5 +5,5 @@ This app aims to make cryptocurrency investing easier by allowing investors to t
 
 ### TLDR
 - Enabling the creation of a digital crypto hedge fund
-- Stack: Java, JavaScript, Firestore database, Firebase cloud functions (push notifications), coinAPI + CoinMarketCap API
+- Stack: Java, JavaScript, Android Studio, Firestore database, Firebase cloud functions (push notifications), coinAPI + CoinMarketCap API
 - Read [in-depth README](https://github.com/mateega/social-investing-android-app/blob/main/in-depth-README.md)
